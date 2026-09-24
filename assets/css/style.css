@@ -1279,7 +1279,7 @@ h2,
     margin-bottom: 44px
   }
 
-  .start{
+  .start {
     text-align: left;
   }
 
@@ -1492,14 +1492,14 @@ h2,
     height: 192px
   }
 
-     .site-footer {
-        /* height: 550px; */
-        /* min-height: 704px; */
-        margin-top: -43px;
-        padding: 132px 0 0;
-        background: url(../images/wave-footer.png) no-repeat;
-        background-size: 100% 100%;
-    }
+  .site-footer {
+    /* height: 550px; */
+    /* min-height: 704px; */
+    margin-top: -43px;
+    padding: 132px 0 0;
+    background: url(../images/wave-footer.png) no-repeat;
+    background-size: 100% 100%;
+  }
 
   .site-footer>.site-container {
     height: 495px
@@ -1665,19 +1665,909 @@ h2,
     font-size: 17px
   }
 }
+
 /* About page title banner */
-.about-page-hero{position:relative;height:350px;margin-top:120px;overflow:hidden;background-color:#302a69;background-image:radial-gradient(circle at -24px -105px,#f2f8fa 0 122px,transparent 123px),radial-gradient(circle at -42px -126px,#58cacf 0 166px,transparent 167px)}
-.about-page-hero .site-container{display:flex;height:100%;align-items:center;justify-content:center}
-.about-page-hero h1{margin:0;color:#fff;font-family:var(--display);font-size:76px;font-weight:400;line-height:1;text-align:center;text-transform:none}
-.about-page-content{position:relative;min-height:867px;padding:90px 0;overflow:hidden;background:#fffdf9}
-.about-page-content .author-art{min-height:687px}
-@media(max-width:991.98px){.about-page-hero{height:280px;margin-top:82px}.about-page-hero h1{font-size:58px}.about-page-content{min-height:0;padding:75px 0}}
-@media(max-width:575.98px){.about-page-hero{height:220px;background-image:radial-gradient(circle at -18px -72px,#f2f8fa 0 82px,transparent 83px),radial-gradient(circle at -30px -90px,#58cacf 0 112px,transparent 113px)}.about-page-hero h1{font-size:42px}.about-page-content{padding:55px 0}.about-page-content .author-art{min-height:330px}}
+.about-page-hero {
+  position: relative;
+  height: 350px;
+  margin-top: 120px;
+  overflow: hidden;
+  background-color: #302a69;
+  background-image: radial-gradient(circle at -24px -105px, #f2f8fa 0 122px, transparent 123px), radial-gradient(circle at -42px -126px, #58cacf 0 166px, transparent 167px)
+}
+
+.about-page-hero .site-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center
+}
+
+.about-page-hero h1 {
+  margin: 0;
+  color: #fff;
+  font-family: var(--display);
+  font-size: 76px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  text-transform: none
+}
+
+.about-page-content {
+  position: relative;
+  min-height: 867px;
+  padding: 90px 0;
+  overflow: hidden;
+  background: #fffdf9
+}
+
+.about-page-content .author-art {
+  min-height: 687px
+}
+
+@media(max-width:991.98px) {
+  .about-page-hero {
+    height: 280px;
+    margin-top: 82px
+  }
+
+  .about-page-hero h1 {
+    font-size: 58px
+  }
+
+  .about-page-content {
+    min-height: 0;
+    padding: 75px 0
+  }
+}
+
+@media(max-width:575.98px) {
+  .about-page-hero {
+    height: 220px;
+    background-image: radial-gradient(circle at -18px -72px, #f2f8fa 0 82px, transparent 83px), radial-gradient(circle at -30px -90px, #58cacf 0 112px, transparent 113px)
+  }
+
+  .about-page-hero h1 {
+    font-size: 42px
+  }
+
+  .about-page-content {
+    padding: 55px 0
+  }
+
+  .about-page-content .author-art {
+    min-height: 330px
+  }
+}
+
 /* Reliable left/right section reveal (also acts as an AOS fallback). */
-.reveal-side{opacity:0;will-change:transform,opacity}
-.reveal-from-left{transform:translate3d(-180px,0,0)}
-.reveal-from-right{transform:translate3d(180px,0,0)}
-.reveal-from-left.is-visible{animation:aboutSlideFromLeft 1.15s cubic-bezier(.22,1,.36,1) both}
-.reveal-from-right.is-visible{animation:aboutSlideFromRight 1.15s cubic-bezier(.22,1,.36,1) .15s both}
-@keyframes aboutSlideFromLeft{0%{opacity:0;transform:translate3d(-180px,0,0)}100%{opacity:1;transform:translate3d(0,0,0)}}
-@keyframes aboutSlideFromRight{0%{opacity:0;transform:translate3d(180px,0,0)}100%{opacity:1;transform:translate3d(0,0,0)}}
+.reveal-side {
+  opacity: 0;
+  will-change: transform, opacity
+}
+
+.reveal-from-left {
+  transform: translate3d(-180px, 0, 0)
+}
+
+.reveal-from-right {
+  transform: translate3d(180px, 0, 0)
+}
+
+.reveal-from-left.is-visible {
+  animation: aboutSlideFromLeft 1.15s cubic-bezier(.22, 1, .36, 1) both
+}
+
+.reveal-from-right.is-visible {
+  animation: aboutSlideFromRight 1.15s cubic-bezier(.22, 1, .36, 1) .15s both
+}
+
+@keyframes aboutSlideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-180px, 0, 0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+@keyframes aboutSlideFromRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(180px, 0, 0)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+/* Book page — Figma frame 59:26 */
+.book-page {
+  background: #fff;
+  overflow: hidden
+}
+
+.book-page h1,
+.book-page h2,
+.book-page h3,
+.book-page-credit strong {
+  font-family: "Lilita One", var(--display);
+  font-weight: 400;
+  text-transform: uppercase
+}
+
+.book-page-hero {
+  position: relative;
+  height: 1024px;
+  padding-top: 120px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #fefdfc 0%, #fffbf4 100%)
+}
+
+.book-page-hero-copy {
+  padding-top: 74px
+}
+
+.book-page-hero-copy h1 {
+  max-width: 760px;
+  margin: 0 0 20px;
+  color: var(--navy);
+  font-size: 83px;
+  line-height: .98;
+  letter-spacing: -2.2px
+}
+
+.book-page-hero-copy h1 span {
+  display: block;
+  color: var(--aqua);
+  font-size: 126px;
+  line-height: .98;
+  white-space: nowrap
+}
+
+.book-page-hero-copy h1 .book-title-line {
+  color: var(--navy);
+  font-size: 83px
+}
+
+.book-page-hero-copy>p {
+  max-width: 658px;
+  margin: 0 0 24px;
+  font-size: 24px;
+  line-height: 1.58
+}
+
+.book-page-hero-copy .book-page-intro {
+  margin-bottom: 12px
+}
+
+.book-page-credit {
+  color: #111;
+  line-height: 1.35 !important
+}
+
+.book-page-credit strong {
+  color: var(--navy);
+  font-size: 28px;
+  text-transform: none
+}
+
+.book-page-credit .credit-author {
+  color: var(--aqua)
+}
+
+.book-page-credit em {
+  font-size: 19px;
+  font-weight: 600
+}
+
+.book-page-hero-copy .btn {
+  margin-top: 8px
+}
+
+.book-page-hero-art {
+  position: relative;
+  height: 100%
+}
+
+.book-page-hero-art img {
+  position: absolute;
+  top: 54px;
+  left: -108px;
+  width: 947px;
+  height: 749px;
+  max-width: none;
+  object-fit: cover
+}
+
+.book-page-leaf {
+  position: absolute;
+  right: -9px;
+  bottom: 45px;
+  width: 80px;
+  height: 184px;
+  transform: scaleX(-1)
+}
+
+.book-overview {
+  position: relative;
+  height: 767px;
+  overflow: hidden;
+  background: #f7fcff
+}
+
+.book-overview-scene {
+  position: absolute;
+  inset: 0;
+  /* width: 118.53%; */
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: left top
+}
+
+.book-overview .site-container {
+  position: relative;
+  z-index: 1
+}
+
+.book-quote {
+  position: relative;
+  height: 100%
+}
+
+.book-quote p {
+  position: absolute;
+  top: 102px;
+  left: 274px;
+  width: 360px;
+  margin: 0;
+  color: #111;
+  font-family: var(--script);
+  font-size: 46px;
+  line-height: 1.38;
+  text-align: center;
+  transform: rotate(-12deg)
+}
+
+.book-overview-copy {
+  padding: 0 0 0 52px;
+  transform: translateY(2px)
+}
+
+.book-overview-copy h2 {
+  margin: 0 0 16px;
+  color: var(--navy);
+  font-size: 60px;
+  line-height: 1.18
+}
+
+.book-overview-copy h2 span {
+  color: var(--aqua)
+}
+
+.book-overview-copy>p {
+  max-width: 657px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5
+}
+
+.book-facts {
+  display: flex;
+  align-items: center;
+  margin-top: 38px;
+  color: var(--navy)
+}
+
+.book-fact {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  padding: 0 35px;
+  border-right: 1px solid rgba(61, 47, 112, .45);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35
+}
+
+.book-fact:first-child {
+  padding-left: 0
+}
+
+.book-fact:last-child {
+  border-right: 0;
+  padding-right: 0
+}
+
+.book-fact img {
+  width: 56px;
+  height: 56px;
+  margin-right: 14px;
+  object-fit: contain;
+  filter: invert(72%) sepia(43%) saturate(606%) hue-rotate(133deg) brightness(92%)
+}
+
+.book-benefits {
+  position: relative;
+  height: 742px;
+  padding: 116px 0 0;
+  background: #fffdf9
+}
+
+.book-benefits:before {
+  content: "";
+  position: absolute;
+  left: -1%;
+  right: -1%;
+  top: -10px;
+  height: 48px;
+  background: radial-gradient(95% 45px at 50% 0, #d8f3ff 0 42%, transparent 44%)
+}
+
+.book-eyebrow {
+  margin: 0 0 46px;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase
+}
+
+.book-benefit-card {
+  height: 405px;
+  padding: 49px 28px 26px;
+  border: 1px solid;
+  border-radius: 80px;
+  text-align: center
+}
+
+.book-benefit-card img {
+  display: block;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 22px;
+  object-fit: contain;
+  filter: invert(21%) sepia(13%) saturate(724%) hue-rotate(213deg) brightness(88%)
+}
+
+.book-benefit-card h3 {
+  display: flex;
+  min-height: 92px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #3d394a;
+  font-size: 34px;
+  line-height: 1.22;
+  letter-spacing: 1px
+}
+
+.book-benefit-card p {
+  margin: 8px auto 0;
+  font-size: 18px;
+  line-height: 1.45
+}
+
+.book-benefit-blue {
+  border-color: #2ba1cd;
+  background: #e2f5fc
+}
+
+.book-benefit-peach {
+  border-color: #ba9669;
+  background: #fef1e1
+}
+
+.book-benefit-green {
+  border-color: #448859;
+  background: #ebfbf0
+}
+
+.book-benefit-yellow {
+  border-color: #b1a065;
+  background: #fdf7e2
+}
+
+.book-cta {
+  position: relative;
+  height: 740px;
+  overflow: hidden;
+  background: #fff
+}
+
+.book-cta:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 135px;
+  width: 690px;
+  height: 390px;
+  transform: translateX(-50%) rotate(-2deg);
+  opacity: .42;
+  background: repeating-linear-gradient(0deg, transparent 0 24px, #dff7f8 25px 53px, transparent 54px 68px);
+  clip-path: polygon(8% 2%, 94% 8%, 88% 19%, 100% 26%, 91% 34%, 98% 44%, 87% 52%, 97% 63%, 89% 71%, 95% 82%, 82% 88%, 90% 97%, 7% 92%, 14% 83%, 2% 76%, 13% 65%, 4% 56%, 15% 47%, 2% 38%, 11% 28%, 3% 18%, 15% 11%)
+}
+
+.book-cta:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 245px;
+  background: url(../images/books/cta-wave.png) center center/cover no-repeat;
+  pointer-events: none
+}
+
+.book-cta-copy {
+  position: relative;
+  z-index: 1;
+  padding-top: 91px;
+  text-align: center
+}
+
+.book-cta-copy h2 {
+  margin: 0;
+  color: var(--navy);
+  font-size: 73px;
+  line-height: 1.25
+}
+
+.book-cta-copy h2 span {
+  color: var(--aqua)
+}
+
+.book-cta-copy p {
+  margin: 7px 0 28px;
+  font-size: 34px;
+  line-height: 1.5
+}
+
+.book-cta-note {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  color: var(--aqua);
+  font-family: var(--script);
+  font-size: 47px;
+  line-height: 1.25;
+  text-align: center
+}
+
+.book-cta-note-left {
+  left: 180px;
+  top: 198px
+}
+
+.book-cta-note-right {
+  right: 180px;
+  top: 139px
+}
+
+.book-page+.site-footer {
+  margin-top: -43px
+}
+
+@media (min-width:1200px) {
+
+  .book-page-hero .site-container,
+  .book-overview .site-container,
+  .book-benefits .site-container {
+    max-width: 1620px
+  }
+
+  .book-page-hero .row {
+    position: relative
+  }
+
+  .book-page-hero-copy {
+    position: absolute;
+    left: 0;
+    top: 89px;
+    padding-top: 0
+  }
+
+  .book-page-hero-art {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 810px
+  }
+
+  .book-page-hero-copy h1 span {
+    width: 950px;
+    transform: scaleX(.8);
+    transform-origin: left center
+  }
+
+  .book-overview-copy {
+    transform: translate(101px, 2px)
+  }
+
+  .book-benefits .row {
+    --bs-gutter-x: 20px
+  }
+}
+
+@media (max-width:1399.98px) {
+  .book-page-hero-copy h1 {
+    font-size: 66px
+  }
+
+  .book-page-hero-copy h1 span {
+    font-size: 98px
+  }
+
+  .book-page-hero-copy h1 .book-title-line {
+    font-size: 66px
+  }
+
+  .book-page-hero-art img {
+    left: -70px;
+    width: 790px;
+    height: auto;
+    top: 115px
+  }
+
+  .book-quote p {
+    left: 150px
+  }
+
+  .book-overview-copy h2 {
+    font-size: 49px
+  }
+
+  .book-benefit-card h3 {
+    font-size: 28px
+  }
+
+  .book-benefit-card p {
+    font-size: 16px
+  }
+
+  .book-cta-note-left {
+    left: 70px
+  }
+
+  .book-cta-note-right {
+    right: 70px
+  }
+}
+
+@media (max-width:1199.98px) {
+  .book-page-hero {
+    height: auto;
+    min-height: 900px;
+    padding: 155px 0 65px
+  }
+
+  .book-page-hero-copy {
+    padding-top: 35px
+  }
+
+  .book-page-hero-copy h1 {
+    font-size: 58px
+  }
+
+  .book-page-hero-copy h1 span {
+    font-size: 78px;
+    transform: none
+  }
+
+  .book-page-hero-copy h1 .book-title-line {
+    font-size: 58px
+  }
+
+  .book-page-hero-copy>p {
+    font-size: 19px
+  }
+
+  .book-page-hero-art {
+    height: 560px
+  }
+
+  .book-page-hero-art img {
+    top: 25px;
+    left: -35px;
+    width: 650px
+  }
+
+  .book-overview {
+    height: auto;
+    min-height: 780px;
+    padding: 90px 0;
+    background: #f7fcff
+  }
+
+  .book-overview-scene {
+    opacity: .23;
+    width: 100%;
+    object-fit: cover
+  }
+
+  .book-quote {
+    display: none
+  }
+
+  .book-overview-copy {
+    max-width: 760px;
+    margin: 0 auto !important;
+    padding: 0;
+    text-align: center;
+    transform: none
+  }
+
+  .book-overview-copy>p {
+    margin: 0 auto
+  }
+
+  .book-facts {
+    justify-content: center
+  }
+
+  .book-benefits {
+    height: auto;
+    padding: 95px 0
+  }
+
+  .book-benefit-card {
+    height: 370px;
+    border-radius: 58px
+  }
+
+  .book-cta-note {
+    font-size: 35px
+  }
+
+  .book-cta-note-left {
+    left: 35px
+  }
+
+  .book-cta-note-right {
+    right: 35px
+  }
+}
+
+@media (max-width:991.98px) {
+  .book-page-hero {
+    text-align: center
+  }
+
+  .book-page-hero-copy h1,
+  .book-page-hero-copy>p {
+    margin-left: auto;
+    margin-right: auto
+  }
+
+  .book-page-hero-art {
+    height: 540px
+  }
+
+  .book-page-hero-art img {
+    left: 50%;
+    width: 680px;
+    transform: translateX(-50%)
+  }
+
+  .book-page-leaf {
+    display: none
+  }
+
+  .book-overview-copy h2 {
+    font-size: 50px
+  }
+
+  .book-cta {
+    height: 650px
+  }
+
+  .book-cta-copy h2 {
+    font-size: 55px
+  }
+
+  .book-cta-copy p {
+    font-size: 27px
+  }
+
+  .book-cta-note {
+    display: none
+  }
+
+  .book-cta:after {
+    height: 190px
+  }
+}
+
+@media (max-width:575.98px) {
+  .book-page-hero {
+    min-height: 0;
+    padding: 122px 0 42px
+  }
+
+  .book-page-hero-copy {
+    padding-top: 20px
+  }
+
+  .book-page-hero-copy h1 {
+    font-size: 36px;
+    line-height: 1.08;
+    letter-spacing: -1px
+  }
+
+  .book-page-hero-copy h1 span {
+    font-size: 48px;
+    white-space: normal
+  }
+
+  .book-page-hero-copy h1 .book-title-line {
+    font-size: 36px
+  }
+
+  .book-page-hero-copy>p {
+    font-size: 15px;
+    line-height: 1.55
+  }
+
+  .book-page-credit strong {
+    font-size: 23px
+  }
+
+  .book-page-credit em {
+    font-size: 15px
+  }
+
+  .book-page-hero-copy .btn {
+    font-size: 12px
+  }
+
+  .book-page-hero-art {
+    height: 315px
+  }
+
+  .book-page-hero-art img {
+    top: 10px;
+    width: 400px
+  }
+
+  .book-overview {
+    min-height: 690px;
+    padding: 70px 0
+  }
+
+  .book-overview-copy h2 {
+    font-size: 34px
+  }
+
+  .book-overview-copy>p {
+    font-size: 15px
+  }
+
+  .book-facts {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px
+  }
+
+  .book-fact {
+    width: 210px;
+    min-height: 54px;
+    padding: 0 0 12px !important;
+    border-right: 0;
+    border-bottom: 1px solid rgba(61, 47, 112, .25)
+  }
+
+  .book-fact:last-child {
+    border: 0
+  }
+
+  .book-fact img {
+    width: 45px;
+    height: 45px
+  }
+
+  .book-eyebrow {
+    font-size: 12px;
+    line-height: 1.7;
+    letter-spacing: 3px
+  }
+
+  .book-benefits {
+    padding: 70px 0
+  }
+
+  .book-benefit-card {
+    height: auto;
+    min-height: 335px;
+    padding: 35px 24px;
+    border-radius: 45px
+  }
+
+  .book-benefit-card h3 {
+    min-height: 70px;
+    font-size: 25px
+  }
+
+  .book-benefit-card p {
+    font-size: 15px
+  }
+
+  .book-cta {
+    height: 520px
+  }
+
+  .book-cta:before {
+    top: 75px;
+    width: 430px;
+    height: 300px
+  }
+
+  .book-cta:after {
+    height: 145px;
+    background-size: auto 100%
+  }
+
+  .book-cta-copy {
+    padding: 75px 22px 0
+  }
+
+  .book-cta-copy h2 {
+    font-size: 38px
+  }
+
+  .book-cta-copy h2 span {
+    display: block
+  }
+
+  .book-cta-copy p {
+    font-size: 20px
+  }
+
+  .book-cta-copy .btn {
+    font-size: 13px
+  }
+
+  .book-page+.site-footer {
+    margin-top: -28px
+  }
+}
+
+@media (max-width:767.98px) {
+
+  .book-page h1,
+  .book-page h2,
+  .book-page h3 {
+    overflow-wrap: anywhere
+  }
+
+  .book-page-hero-copy h1,
+  .book-page-hero-copy h1 span,
+  .book-page-hero-copy h1 .book-title-line {
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
+    transform: none
+  }
+
+  .book-benefits .col-sm-6 {
+    width: 100%
+  }
+
+  .book-benefit-card {
+    width: 100%;
+    overflow: hidden
+  }
+
+  .book-cta-copy {
+    max-width: 100%;
+    overflow: hidden
+  }
+}

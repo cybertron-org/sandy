@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Montserrat:wght@400;500;600;700&family=Titan+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Lilita+One&family=Montserrat:wght@400;500;600;700&family=Titan+One&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -25,10 +25,11 @@
                     data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
                     aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="mainNav">
+                    <?php $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php'); ?>
                     <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-5">
-                        <li class="nav-item"><a class="nav-link active" href="index">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about">About the Author</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#books">Books</a></li>
+                        <li class="nav-item"><a class="nav-link <?= $currentPage === 'index.php' ? 'active' : '' ?>" href="index">Home</a></li>
+                        <li class="nav-item"><a class="nav-link <?= $currentPage === 'about.php' ? 'active' : '' ?>" href="about">About the Author</a></li>
+                        <li class="nav-item"><a class="nav-link <?= $currentPage === 'book.php' ? 'active' : '' ?>" href="book">Books</a></li>
                     </ul>
                     <a class="btn btn-brand d-none d-lg-inline-flex" href="#contact">Contact</a>
                 </div>
